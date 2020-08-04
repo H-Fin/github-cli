@@ -28,28 +28,27 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`github hello [FILE]`](#github-hello-file)
+* [`github getRepos [USERNAME]`](#github-getRepos)
 * [`github help [COMMAND]`](#github-help-command)
 
-## `github hello [FILE]`
+## `github getRepos [USERNAME]`
 
 describe the command here
 
 ```
 USAGE
-  $ github hello [FILE]
+  $ github getRepos [USERNAME]
 
 OPTIONS
   -f, --force
   -h, --help       show CLI help
-  -n, --name=name  name to print
+  -u, --username=username  Returns GitHub repos list for a user.
 
 EXAMPLE
-  $ github hello
-  hello world from ./src/hello.ts!
+  $ github getRepos -u 'h-fin'
 ```
 
-_See code: [src/commands/hello.ts](https://github.com/H-Fin/github-cli/blob/v0.0.1/src/commands/hello.ts)_
+_See code: [src/commands/getRepos.ts](https://github.com/H-Fin/github-cli/blob/v0.0.1/src/commands/getRepos.ts)_
 
 ## `github help [COMMAND]`
 
